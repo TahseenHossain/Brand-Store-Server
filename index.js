@@ -27,9 +27,8 @@ async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
     //await client.connect();
-
-    const elementsCollection = client.db('carDB').collection('car');
-    const userCollection = client.db('carDB').collection('user');
+    //const elementsCollection = client.db('carDB').collection('car');
+    //const userCollection = client.db('carDB').collection('user');
 
     app.get('/elements', async(req, res) => {
         const cursor = elementsCollection.find();
